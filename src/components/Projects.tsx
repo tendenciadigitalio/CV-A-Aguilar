@@ -52,6 +52,7 @@ const Projects = () => {
                             rel="noopener noreferrer"
                             initial={{ backgroundColor: "rgb(255, 255, 255)" }}
                             whileHover={{ backgroundColor: idx === 0 ? "#7c3aed" : "#3df23d" }}
+                            whileTap={{ backgroundColor: idx === 0 ? "#7c3aed" : "#3df23d" }}
                             className={`block relative group border-b-2 border-black last:border-b-0 p-12 transition-all duration-300 overflow-hidden cursor-pointer`}
                         >
                             {/* Grid background overlay that only appears on hover or is always there? Let's make it visible on hover for maximum impact */}
