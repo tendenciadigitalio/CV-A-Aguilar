@@ -1,7 +1,7 @@
 const TechStack = () => {
     const stack = [
-        { category: "CORE", tools: ["React / Next.js", "TypeScript", "Node.js", "Python"] },
-        { category: "AI & AUTO", tools: ["n8n", "LangChain", "Claude API", "RAG Systems", "Supabase"] },
+        { category: "CORE", tools: ["React / Next.js", "TypeScript", "Node.js", "Python", "HTML/CSS", "javascript", "Dart", "Mysql, Mariadb, Postgresql", "Wordpress,Woocommerce"] },
+        { category: "AI & AUTO", tools: ["n8n", "Vapi", "Zapier", "Make", "LangChain", "OpenAI API", "RAG Systems", "Supabase"] },
         { category: "INFRA", tools: ["Docker", "Portainer", "Linux", "CyberPanel", "Git"] },
         { category: "MOBILE", tools: ["Flutter", "React Native", "FlutterFlow"] }
     ];
