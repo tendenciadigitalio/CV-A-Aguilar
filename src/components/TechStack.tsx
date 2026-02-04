@@ -3,7 +3,8 @@ const TechStack = () => {
         { category: "CORE", tools: ["React / Next.js", "TypeScript", "Node.js", "Python", "HTML/CSS", "javascript", "Dart", "Mysql, Mariadb, Postgresql", "Wordpress,Woocommerce"] },
         { category: "AI & AUTO", tools: ["n8n", "Vapi", "Zapier", "Make", "LangChain", "OpenAI API", "RAG Systems", "Supabase"] },
         { category: "INFRA", tools: ["Docker", "Portainer", "Linux", "CyberPanel", "Git"] },
-        { category: "MOBILE", tools: ["Flutter", "React Native", "FlutterFlow"] }
+        { category: "MOBILE", tools: ["Flutter", "React Native", "FlutterFlow"] },
+        { category: "PRODUCER", tools: ["Logística y Planeación de Eventos"] }
     ];
 
     return (
@@ -12,7 +13,7 @@ const TechStack = () => {
                 <div className="md:col-span-1 border-r border-white/20 pr-8">
                     <h2 className="text-2xl font-black mb-4">ARSENAL_TECNICO</h2>
                     <p className="font-mono text-xs text-gray-400">
-                        Tools y Frameworks para construir soluciones escalables.
+                        Tools y Frameworks para construir soluciones escalables de software a medida.
                     </p>
                 </div>
 
