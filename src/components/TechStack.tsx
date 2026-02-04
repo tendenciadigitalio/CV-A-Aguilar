@@ -4,7 +4,8 @@ const TechStack = () => {
         { category: "AI & AUTO", tools: ["n8n", "Vapi", "Zapier", "Make", "LangChain", "OpenAI API", "RAG Systems", "Supabase"] },
         { category: "INFRA", tools: ["Docker", "Portainer", "Linux", "CyberPanel", "Git"] },
         { category: "MOBILE", tools: ["Flutter", "React Native", "FlutterFlow"] },
-        { category: "PRODUCER", tools: ["Logística y Planeación de Eventos"] }
+        { category: "DJ-PRODUCER", tools: ["Logística y Planeación de Eventos"] },
+        { category: "UI-UX PECIALIST", tools: ["Diseño de interfaces de usuario, practicas y creativas"] }
     ];
 
     return (

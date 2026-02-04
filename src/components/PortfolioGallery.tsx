@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 const PortfolioGallery = () => {
     const items = [
         { img: "2fc6b2a5-39fc-4917-b025-be93fdf03f5a_3840w.webp", title: "IA_HOME_DESIGNER", role: "DEVELOPER", lic: "#0", edu: "M", exp: "IOS/ANDROID" },
+        { img: "bacardimockup.png", title: "BACARDI_MUNDIALES 2026", role: "DEVELOPER", lic: "#0", edu: "M", exp: "IOS/ANDROID" },
         { img: "8b8dcf08-7b00-4eaf-964b-e37f40130289_3840w.webp", title: "NEO_CORE", role: "Interface DEVELOPER", lic: "#042-BETA", edu: "STANFORD", exp: "8 YEARS" },
         { img: "92d0c40f-f813-47fd-a53a-5def9c2ca85c_3840w.webp", title: "VOID_TRADING", role: "DEVELOPER UI/UX DESIGNER", lic: "#992-GAMMA", edu: "OXFORD", exp: "15 YEARS" },
         { img: "a7491ea5-1a7a-4f23-a5e0-d0f3c352111c_3840w.jpg", title: "IMGO APP", role: "UI/UX DESIGNER", lic: "#777-DELTA", edu: "CALTECH", exp: "5 YEARS" },

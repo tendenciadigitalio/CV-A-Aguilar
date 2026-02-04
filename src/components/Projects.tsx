@@ -16,9 +16,9 @@ const Projects = () => {
         },
         {
             title: "FORWARD JS",
-            role: "CREATIVE DIRECTOR",
+            role: "DJ-PRODUCER",
             desc: "Producción de Eventos Inmersivos. Audio, Iluminación y Tech Interactiva.",
-            stack: ["Live Streaming", "3D Mapping", "Event Techn"],
+            stack: ["Audio, Dj, Conceptual Producer", "3D Mapping & Liights", "Event Techn"],
             link: "https://forwardjs.com.mx/",
             year: "2000",
             color: "bg-[#3df23d]", // Green
