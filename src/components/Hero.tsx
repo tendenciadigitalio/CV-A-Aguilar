@@ -27,7 +27,8 @@ const Hero = () => {
                         <motion.div style={{ y }}>
                             <h1 className="text-[12vw] leading-[0.85] font-black tracking-tighter mix-blend-difference">
                                 ANGEL<br />
-                                AGUILAR
+                                AGUILAR<br />
+                                MONDRAGÓN<br />
                             </h1>
                         </motion.div>
                         <div className="mt-8 grid grid-cols-1 md:grid-cols-12 gap-8 border-t-2 border-black pt-8">
