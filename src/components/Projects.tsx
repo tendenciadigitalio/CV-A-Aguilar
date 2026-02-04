@@ -9,7 +9,7 @@ const Projects = () => {
             desc: "Agencia de AI Automation. Chatbots, RAG Systems y Flujos Enterprise.",
             stack: ["n8n", "Supabase", "React", "Docker"],
             link: "https://online.tendenciadigital.io/",
-            year: "2026",
+            year: "2005",
             color: "bg-[#7c3aed]", // Purple
             tagBg: "bg-white/20",
             tagText: "text-white"
@@ -20,7 +20,7 @@ const Projects = () => {
             desc: "Producción de Eventos Inmersivos. Audio, Iluminación y Tech Interactiva.",
             stack: ["Live Streaming", "3D Mapping", "Event Techn"],
             link: "https://forwardjs.com.mx/",
-            year: "2026",
+            year: "2000",
             color: "bg-[#3df23d]", // Green
             tagBg: "bg-black",
             tagText: "text-white"
@@ -60,21 +60,21 @@ const Projects = () => {
 
                             <div className="relative z-10">
                                 <div className="flex justify-between items-start mb-12">
-                                    <span className={`font-mono text-xs border border-current px-4 py-1 rounded-full ${idx === 0 ? 'group-hover:text-white group-hover:border-white' : 'group-hover:text-black group-hover:border-black'}`}>
+                                    <span className={`font-mono text-xs border border-current px-4 py-1 rounded-full ${idx === 0 ? 'group-hover:text-white group-hover:border-white group-active:text-white group-active:border-white' : 'group-hover:text-black group-hover:border-black group-active:text-black group-active:border-black'}`}>
                                         {project.year}
                                     </span>
-                                    <ArrowUpRight className={`opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 ${idx === 0 ? 'text-white' : 'text-black'}`} />
+                                    <ArrowUpRight className={`opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 group-active:translate-x-1 group-active:-translate-y-1 ${idx === 0 ? 'text-white' : 'text-black'}`} />
                                 </div>
 
-                                <h3 className={`text-5xl font-black mb-4 tracking-tighter transition-colors ${idx === 0 ? 'group-hover:text-white' : 'group-hover:text-black'}`}>
+                                <h3 className={`text-5xl font-black mb-4 tracking-tighter transition-colors ${idx === 0 ? 'group-hover:text-white group-active:text-white' : 'group-hover:text-black group-active:text-black'}`}>
                                     {project.title}
                                 </h3>
 
-                                <p className={`font-mono text-xs mb-8 uppercase tracking-widest transition-colors ${idx === 0 ? 'group-hover:text-white/80' : 'group-hover:text-black/70'}`}>
+                                <p className={`font-mono text-xs mb-8 uppercase tracking-widest transition-colors ${idx === 0 ? 'group-hover:text-white/80 group-active:text-white/80' : 'group-hover:text-black/70 group-active:text-black/70'}`}>
                                     {project.role}
                                 </p>
 
-                                <p className={`text-xl font-medium mb-10 max-w-md leading-tight transition-colors ${idx === 0 ? 'group-hover:text-white' : 'group-hover:text-black'}`}>
+                                <p className={`text-xl font-medium mb-10 max-w-md leading-tight transition-colors ${idx === 0 ? 'group-hover:text-white group-active:text-white' : 'group-hover:text-black group-active:text-black'}`}>
                                     {project.desc}
                                 </p>
 
@@ -84,8 +84,8 @@ const Projects = () => {
                                             key={tech}
                                             className={`font-mono text-[10px] px-3 py-1 uppercase tracking-wider transition-colors 
                                             ${idx === 0
-                                                    ? 'bg-black text-white group-hover:bg-white/20 group-hover:text-white'
-                                                    : 'bg-black text-white group-hover:bg-black group-hover:text-white'}`}
+                                                    ? 'bg-black text-white group-hover:bg-white/20 group-hover:text-white group-active:bg-white/20 group-active:text-white'
+                                                    : 'bg-black text-white group-hover:bg-black group-hover:text-white group-active:bg-black group-active:text-white'}`}
                                         >
                                             {tech}
                                         </span>
