@@ -6,7 +6,7 @@ import AuraCube from './AuraCube';
 const Hero = () => {
     const containerRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: containerRef });
-    const y = useTransform(scrollYProgress, [0, 1], ['0%', '20%']);
+    const y = useTransform(scrollYProgress, [0, 1], ['0%', '90%']);
 
     return (
         <section ref={containerRef} className="min-h-screen relative flex flex-col justify-between p-4 md:p-12 border-b-2 border-black overflow-hidden">

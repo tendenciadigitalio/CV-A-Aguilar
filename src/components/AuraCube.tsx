@@ -168,7 +168,7 @@ const AuraCube = () => {
         };
     }, []);
 
-    return <div ref={containerRef} className="absolute inset-0 z-0 pointer-events-none opacity-50 flex items-center justify-center overflow-hidden" />;
+    return <div ref={containerRef} className="absolute inset-0 z-0 pointer-events-none opacity-20 flex items-center justify-center overflow-hidden" />;
 };
 
 export default AuraCube;
