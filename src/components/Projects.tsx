@@ -1,5 +1,4 @@
 import { ArrowUpRight } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const Projects = () => {
     const projects = [
@@ -45,36 +44,36 @@ const Projects = () => {
 
                 <div className="flex flex-col">
                     {projects.map((project, idx) => (
-                        <motion.a
+                        <a
                             key={idx}
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            initial={{ backgroundColor: "rgb(255, 255, 255)" }}
-                            whileHover={{ backgroundColor: idx === 0 ? "#7c3aed" : "#3df23d" }}
-                            whileTap={{ backgroundColor: idx === 0 ? "#7c3aed" : "#3df23d" }}
-                            className={`block relative group border-b-2 border-black last:border-b-0 p-12 transition-all duration-300 overflow-hidden cursor-pointer`}
+                            className={`block relative group border-b-2 border-black last:border-b-0 p-12 transition-all duration-300 overflow-hidden cursor-pointer bg-white 
+                                ${idx === 0 ? 'lg:hover:bg-[#7c3aed]' : 'lg:hover:bg-[#3df23d]'}`}
                         >
-                            {/* Grid background overlay that only appears on hover or is always there? Let's make it visible on hover for maximum impact */}
-                            <div className="absolute inset-0 grid-bg opacity-0 group-hover:opacity-20 transition-opacity pointer-events-none" />
+                            {/* Grid background overlay - Only on Desktop Hover */}
+                            <div className="absolute inset-0 grid-bg opacity-0 lg:group-hover:opacity-20 transition-opacity pointer-events-none" />
 
                             <div className="relative z-10">
                                 <div className="flex justify-between items-start mb-12">
-                                    <span className={`font-mono text-xs border border-current px-4 py-1 rounded-full ${idx === 0 ? 'group-hover:text-white group-hover:border-white group-active:text-white group-active:border-white' : 'group-hover:text-black group-hover:border-black group-active:text-black group-active:border-black'}`}>
+                                    <span className={`font-mono text-xs border border-current px-4 py-1 rounded-full transition-colors
+                                        ${idx === 0 ? 'lg:group-hover:text-white lg:group-hover:border-white' : 'lg:group-hover:text-black lg:group-hover:border-black'}`}>
                                         {project.year}
                                     </span>
-                                    <ArrowUpRight className={`opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 group-active:translate-x-1 group-active:-translate-y-1 ${idx === 0 ? 'text-white' : 'text-black'}`} />
+                                    {/* Arrow: Always visible on mobile, hover-animated on desktop */}
+                                    <ArrowUpRight className={`transition-all transform lg:opacity-0 lg:group-hover:opacity-100 lg:group-hover:translate-x-1 lg:group-hover:-translate-y-1 ${idx === 0 ? 'lg:group-hover:text-white' : 'lg:group-hover:text-black'}`} />
                                 </div>
 
-                                <h3 className={`text-5xl font-black mb-4 tracking-tighter transition-colors ${idx === 0 ? 'group-hover:text-white group-active:text-white' : 'group-hover:text-black group-active:text-black'}`}>
+                                <h3 className={`text-5xl font-black mb-4 tracking-tighter transition-colors ${idx === 0 ? 'lg:group-hover:text-white' : 'lg:group-hover:text-black'}`}>
                                     {project.title}
                                 </h3>
 
-                                <p className={`font-mono text-xs mb-8 uppercase tracking-widest transition-colors ${idx === 0 ? 'group-hover:text-white/80 group-active:text-white/80' : 'group-hover:text-black/70 group-active:text-black/70'}`}>
+                                <p className={`font-mono text-xs mb-8 uppercase tracking-widest transition-colors ${idx === 0 ? 'lg:group-hover:text-white/80' : 'lg:group-hover:text-black/70'}`}>
                                     {project.role}
                                 </p>
 
-                                <p className={`text-xl font-medium mb-10 max-w-md leading-tight transition-colors ${idx === 0 ? 'group-hover:text-white group-active:text-white' : 'group-hover:text-black group-active:text-black'}`}>
+                                <p className={`text-xl font-medium mb-10 max-w-md leading-tight transition-colors ${idx === 0 ? 'lg:group-hover:text-white' : 'lg:group-hover:text-black'}`}>
                                     {project.desc}
                                 </p>
 
@@ -84,15 +83,15 @@ const Projects = () => {
                                             key={tech}
                                             className={`font-mono text-[10px] px-3 py-1 uppercase tracking-wider transition-colors 
                                             ${idx === 0
-                                                    ? 'bg-black text-white group-hover:bg-white/20 group-hover:text-white group-active:bg-white/20 group-active:text-white'
-                                                    : 'bg-black text-white group-hover:bg-black group-hover:text-white group-active:bg-black group-active:text-white'}`}
+                                                    ? 'bg-black text-white lg:group-hover:bg-white/20 lg:group-hover:text-white'
+                                                    : 'bg-black text-white lg:group-hover:bg-black lg:group-hover:text-white'}`}
                                         >
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
                             </div>
-                        </motion.a>
+                        </a>
                     ))}
                 </div>
             </div>
